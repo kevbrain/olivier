@@ -18,4 +18,5 @@ data:
   app-request.cpu: "{{app-request.cpu}}"
   ocp.replicas: "{{ocp.replicas}}"
   app-version: "{{app-version}}"
+  test-ksc: "{{test-ksc}}"
 ---
