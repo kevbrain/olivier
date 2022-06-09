@@ -1,0 +1,9 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: olivier-dev-eventlistener
+  namespace: olivier-dev
+spec:
+  serviceAccountName: pipeline
+  triggers:
+    - triggerRef: olivier-dev-trigger

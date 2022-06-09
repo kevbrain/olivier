@@ -1,0 +1,11 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: Trigger
+metadata:
+  name: olivier-dev-trigger
+  namespace: olivier-dev
+spec:
+  serviceAccountName: pipeline
+  bindings:
+    - ref: olivier-dev-triggerbinding
+  template:
+    ref: olivier-dev-triggertemplate
